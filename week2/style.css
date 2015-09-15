@@ -1,0 +1,30 @@
+body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+article {
+    width: 600px;
+    background-color: bisque;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    margin: auto;
+    border: solid;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+a{
+    color:red;
+}
+
+img {
+    border: solid;
+}
+
+ul{
+    text-align: center;
+}
