@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="jquery-1.11.3.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+<div class="container">
+    <img id="header" src="images/header.gif"/>
+    <button id="button1">Website</button>
+    <button id="button2">Short</button>
+    <button id="button3">Long</button>
+    <button id="button4">Persona 1</button>
+    <button id="button5">Persona 2</button>
+    <button id="button6">Persona 3</button>
+    <button id="button7">Comps</button>
+    <div id="result">
+        <p id="title"></p>
+        <img id="pic" scr=""/>
+        <p id="text"></p>
+    </div>
+</div>
+
+<script>
+
+    //Hide the image border on initial load
+    $("#pic").hide();
+
+    //Button for the name of my website
+    $( "#button1" ).click(function() {
+        $("#pic").hide();
+        document.getElementById("title").innerHTML = "";
+        document.getElementById("text").innerHTML = "www.JacobMichaelPrice.com";
+        document.getElementById("pic").src = "";
+    });
+
+    //Button for the short pitch
+    $( "#button2" ).click(function() {
+        document.getElementById("title").innerHTML = "";
+        $("#pic").hide();
+        document.getElementById("text").innerHTML = "The purpose of JacobMichaelPrice is to display" +
+        " the personal portfolio of Jacob Michael Price.";
+        document.getElementById("pic").src = "";
+    });
+
+    //Button for the long pitch
+    $( "#button3" ).click(function() {
+        document.getElementById("title").innerHTML = "";
+        $("#pic").hide();
+        document.getElementById("text").innerHTML = "The website will have everything ranging from the skills, " +
+        "hobbies, interests, and experience of myself, " +
+                "Jacob Michael Price. The main purpose of the website " +
+        "is to display a personal portfolio regarding myself. "+
+                "The main audience for this website would be future employers, " +
+                "however, friends and family would be more than encouraged to " +
+        "view the website as well. A clear concise background of myself " +
+        "will easily allow people to understand who I am and what I like " +
+        "to do, very quickly and efficiently.";
+        document.getElementById("pic").src = "";
+    });
+
+    //Button for persona1
+    $( "#button4" ).click(function() {
+        document.getElementById("title").innerHTML = "Mr. Smith CEO";
+        document.getElementById("text").innerHTML = "Professional recruiter looking "+
+        "for a candidate.";
+        $("#pic").show();
+        document.getElementById("pic").src = "images/smith.jpg";
+    });
+
+    //Button for persona2
+    $( "#button5" ).click(function() {
+        document.getElementById("title").innerHTML = "Jimmy Starks Pianist";
+        document.getElementById("text").innerHTML = "Music lover going to enjoy" +
+        " some original music.";
+        $("#pic").show();
+        document.getElementById("pic").src = "images/jimmy.jpg";
+    });
+
+    //Button for persona3
+    $( "#button6" ).click(function() {
+        document.getElementById("title").innerHTML = "Joe Schmo";
+        document.getElementById("text").innerHTML = "Friend going to find " +
+                "some details about Jacob Michael Price.";
+        $("#pic").show();
+        document.getElementById("pic").src = "images/joe.jpg";
+    });
+
+    //Button for the comps
+    $( "#button7" ).click(function() {
+        document.getElementById("title").innerHTML = "COMPS";
+        $("#pic").hide();
+        document.getElementById("text").innerHTML = "http://www.tailopez.com/ " +
+        "https://www.barackobama.com/ " +
+        "http://onerepublic.com/";
+    });
+
+
+
+</script>
+
+
+<!--
+
+****DATA****
+
+
+<h1>JacobMichaelPrice</h1>
+<div>
+<p>The purpose of JacobMichaelPrice is to display
+the personal portfolio of Jacob Michael Price.</p>
+</div>
+
+<div>
+<p>The website will have everything ranging from the skills,
+    hobbies, interests, and experience of myself,
+    Jacob Michael Price. The main purpose of the website
+    is to display a personal portfolio regarding myself.
+    The main audience for this website would be future employers,
+    however, friends and family would be more than encouraged to
+    view the website as well. A clear concise background of myself
+    will easily allow people to understand who I am and what I like
+    to do, very quickly and efficiently.</p>
+</div>
+
+<div>
+    <p>Mr. Smith CEO</p>
+    <p>Professional recruiter looking
+    for a candidate.</p>
+
+    <p>Jimmy Starks Pianist</p>
+    <p>Music lover going to enjoy
+    some original music.</p>
+
+    <p>Joe Schmo</p>
+    <p>Friend going to find some details
+    about Jacob Michael Price.</p>
+</div>
+<embed id="zero" src="audio/time.mp3" autostart="true" loop="true" hidden="true">
+-->
+
+
+</body>
+</html>
