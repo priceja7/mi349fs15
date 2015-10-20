@@ -1,0 +1,35 @@
+body {
+    background: #ccc;
+    font-family: Helventica;
+}
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    background: #fff url('onion_dip.jpg') no-repeat top center;
+    padding-top: 200px;
+    border-top: 10px solid #424242;
+}
+
+article {
+    padding: 20px;
+    background: #fff;
+}
+
+.recipe {
+    background-color: beige;
+    font-size: 1.5em;
+    padding: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
+    text-align: center;
+
+}
+
+.recipe h2 {
+    color: maroon;
+}
+
+.recipe h1 {
+    color: maroon;
+    font-size: 1.7em;
+}
