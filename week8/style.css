@@ -1,0 +1,33 @@
+
+
+
+.column-left{
+    float: left;
+    width: 33.33%;
+    background-color: blue;
+}
+
+.column-right{
+    float: right;
+    width: 33.33%;
+    background-color: green;
+}
+
+.column-center{
+    display: inline-block;
+    width: 33.33%;
+    background-color: red;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi){
+    /* Retina */
+}
+
