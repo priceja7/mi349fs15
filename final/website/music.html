@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8" >
+    <script src="jquery-1.11.3.min.js"></script>
+    <title>Music</title>
+</head>
+<body>
+
+
+
+<div class="overlay">
+
+    <article>
+        <h1>Music</h1>
+        <h2>Experience</h2>
+        <p>One day when it was rainy and I was bored back in high school,
+        I went downstairs and found an old keyboard laying around. I plugged it in
+        and began hitting random keys on it, thinking to myself that I should sit
+        down and learn this instrument. So I began to search on the web 'how to play piano'.
+        After some searching, I found a YouTube video for a song that I really liked. The video
+        was a tutorial of how to play the song. It took me a few weeks to learn it, but once I did,
+        I fell in love with playing. I began to search how to play more songs and learn them
+        as well.</p>
+
+        <p>I've been doing this for probably about 4-5 years now, and I have no plans
+        on stoping. I have taught myself music theory, scales, and I can now play music
+        by ear (playing a song out of memory, just by hearing it).</p>
+        <h2>Future</h2>
+        <p>My future plans regarding music, include setting up a recording studio and begin to write
+        original music. I would also like to expand my musical horizons to other instruments as well
+        as vocals. After college, I plan to take vocal lessons in order to progress as a musical artist.</p>
+    </article>
+
+
+<embed id="audio_file" src="audio/war.mp3" loop="infinite" alt="">
+<table id="absolute">
+    <tr><td><button class="one" onclick="location.href='index.html'">Home</button></td></tr>
+    <tr><td><button class="two" onclick="location.href='about.html'">About</button></td></tr>
+    <tr><td><button class="three" onclick="location.href='career.html'">Work</button></td></tr>
+    <tr><td><button class="four" id='checked'  onclick="location.href='music.html'">Music</button></td></tr>
+</table>
+
+
+
+<script>
+    var step=0;
+
+    //variable that will increment through the images
+    var images = ["url('gifs/number1.gif')","url('gifs/number2.gif')","url('gifs/number3.gif')","url('gifs/number4.gif')","url('gifs/number5.gif')","url('gifs/number6.gif')","url('gifs/number7.gif')","url('gifs/number8.gif')","url('gifs/number9.gif')","url('gifs/number10.gif')","url('gifs/number11.gif')","url('gifs/number12.gif')","url('gifs/number13.gif')","url('gifs/number14.gif')","url('gifs/number15.gif')","url('gifs/number16.gif')","url('gifs/number17.gif')","url('gifs/number18.gif')"];
+
+    var array = new Array();
+    array[0] = "I have been playing the piano since I was 15 years old.";
+    array[1] = "I have never taken a music class in my entire life.";
+    //var array = ["images/music1.jpg","images/music2.jpg","images/music3.jpg","images/music4.jpg","images/music5.jpg","images/music6.jpg"];
+    function slideit(){
+        var index = Math.floor((Math.random() * 2) + 0);
+        var rand = Math.floor((Math.random() * 60) + 5);
+        var random_pos = Math.floor((Math.random() * 70) + 20);
+        document.body.style.backgroundImage = images[14];
+        document.body.style.transition = "background-image .5 ease-out";
+        document.getElementById('randPos').innerHTML = array[index];
+        //document.getElementById('image').src = array[index];
+        //document.getElementById('image').style.top = random_pos.toString() + "%";
+        //document.getElementById('image').style.left = rand.toString() + "%";
+        //call function "slideit()" every 2.5 seconds
+        setTimeout("slideit()",2000);
+    }
+
+    slideit();
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8" >
+    <script src="jquery-1.11.3.min.js"></script>
+
+    <title>About</title>
+</head>
+<body>
+
+
+<div class="overlay">
+
+    <article>
+        <h1>About Me</h1>
+        <h2>Birth: Warren, Michigan</h2>
+        <h2>Date: June 22, 1994</h2>
+        <h2>Siblings: 4</h2>
+        <h2>School: Michigan State University</h2>
+        <h2>Major: Computer Science</h2>
+        <h2>Level: Senior</h2>
+        <h2>Expected Grad: May, 2016</h2>
+        <h2>Passions: Music, Sports, Technology</h2>
+        <h1>Bio</h1>
+        <p>I'ma very passionate person and I hope to one day become a Senior Software
+        Developer for a global company. I love being out and about and making other people
+        happy!</p>
+
+    </article>
+
+
+<embed id="audio_file" src="audio/stellar.mp3"  loop="infinite">
+<table id="absolute">
+    <tr><td><button class="one" onclick="location.href='index.html'">Home</button></td></tr>
+    <tr><td><button class="two" id='checked'  onclick="location.href='about.html'">About</button></td></tr>
+    <tr><td><button class="three" onclick="location.href='career.html'">Work</button></td></tr>
+    <tr><td><button class="four" onclick="location.href='music.html'">Music</button></td></tr>
+</table>
+
+
+
+<script>
+    var step=0;
+
+    //variable that will increment through the images
+    var images = ["url('gifs/number1.gif')","url('gifs/number2.gif')","url('gifs/number3.gif')","url('gifs/number4.gif')","url('gifs/number5.gif')","url('gifs/number6.gif')","url('gifs/number7.gif')","url('gifs/number8.gif')","url('gifs/number9.gif')","url('gifs/number10.gif')","url('gifs/number11.gif')","url('gifs/number12.gif')","url('gifs/number13.gif')","url('gifs/number14.gif')","url('gifs/number15.gif')","url('gifs/number16.gif')","url('gifs/number17.gif')","url('gifs/number18.gif')"];
+
+
+    function slideit(){
+        var index = Math.floor((Math.random() * 16) + 1);
+        document.body.style.backgroundImage = images[8];
+        document.body.style.transition = "background-image .5 ease-out";
+        //call function "slideit()" every 2.5 seconds
+        setTimeout("slideit()",5000);
+    }
+
+    slideit();
+</script>
+</div>
+</body>
+</html>

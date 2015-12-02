@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8" >
+    <script src="jquery-1.11.3.min.js"></script>
+    <title>Career</title>
+</head>
+<body>
+
+<div class="overlay">
+
+    <article>
+        <h1>Career/Experience</h1>
+        <h2>Dajaco</h2>
+        <p>When I was 16, I spent the summer working at a factory that supplies
+        small car parts to the Big 3 companies. Here, I spent 50-60 hours a week
+        working on a machine and sorting/checking parts. It was a very good start for me in
+        terms of a work career. It showed me that value of a dollar and what hard work is.</p>
+        <h2>Little Caesars</h2>
+        <p>I spent the next 4 years working here. I did everything from prepping the dough for pizzas,
+        to making them, and then selling them. This job showed me what true customer service is, as well
+        as the importance of a good workplace environment. The better the environment, the happier you are and
+        the less it feels like a 'job'.</p>
+        <h2>General Motors</h2>
+        <p>This is where my career in computer science and programming will start in June 2016. I look
+        forward to using my skills I learned over the past 4 years and applying them into the workforce. </p>
+    </article>
+
+
+<embed id="audio_file" src="audio/canon.mp3"  loop="infinite" alt="">
+<table id="absolute">
+    <tr><td><button class="one" onclick="location.href='index.html'">Home</button></td></tr>
+    <tr><td><button class="two" onclick="location.href='about.html'">About</button></td></tr>
+    <tr><td><button class="three" id='checked' onclick="location.href='career.html'">Work</button></td></tr>
+    <tr><td><button class="four" onclick="location.href='music.html'">Music</button></td></tr>
+</table>
+
+
+
+<script>
+    var step=0;
+
+    //variable that will increment through the images
+    var images = ["url('gifs/number1.gif')","url('gifs/number2.gif')","url('gifs/number3.gif')","url('gifs/number4.gif')","url('gifs/number5.gif')","url('gifs/number6.gif')","url('gifs/number7.gif')","url('gifs/number8.gif')","url('gifs/number9.gif')","url('gifs/number10.gif')","url('gifs/number11.gif')","url('gifs/number12.gif')","url('gifs/number13.gif')","url('gifs/number14.gif')","url('gifs/number15.gif')","url('gifs/number16.gif')","url('gifs/number17.gif')","url('gifs/number18.gif')"];
+
+
+    function slideit(){
+        var index = Math.floor((Math.random() * 16) + 1);
+        document.body.style.backgroundImage = images[1];
+        document.body.style.transition = "background-image .5 ease-out";
+        //call function "slideit()" every 2.5 seconds
+        setTimeout("slideit()",5000);
+    }
+
+    slideit();
+</script>
+</div>
+</body>
+</html>

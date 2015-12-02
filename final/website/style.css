@@ -1,0 +1,154 @@
+/**basic body statement**/
+body {
+    background: url(images/num1.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/**statements for the articles on each page**/
+article {
+    background: white;
+    opacity: 0.5;
+    position: fixed; top: 5%; left: 2%; right:70%; bottom: 5%;
+    border: solid 5pt black;
+    text-align: center;
+}
+
+/**adjust the font-size as you change the size of page**/
+h1{
+    font-size: 2.2vw;
+}
+
+#audio_file {
+    visibility: hidden;
+}
+
+h2{
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1.1vw;
+}
+
+/**adjust the images as you change the size of the page**/
+img {
+    width: 80%;
+    height: 80%;
+    border: double 1pt black;
+}
+
+#sil {
+    width: 40%;
+    height: 20%;
+    border: double 1pt black;
+}
+
+/**adjust the 4 buttons on the right hand side of screen**/
+button {
+    font-size: 9vw;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    border: solid 1pt black;
+    width: 30%;
+    display: inline-block;
+
+}
+
+button.one {
+    position: fixed; top: 0%; right: 2%;
+}
+
+button.two {
+    position: fixed; top: 25%; right: 2%;
+}
+
+button.three {
+    position: fixed; top: 50%; right: 2%;
+}
+
+button.four {
+    position: fixed; top: 75%; right: 2%;
+}
+
+/**hover state for the 4 buttons**/
+button:hover {
+    color: yellow;
+}
+
+/**change background if button has been clicked**/
+#checked {
+    background-color: rgba(0,100,100,0.2);
+}
+
+
+
+/* Media Query NUMBER 1 for Iphone's, Iphone 6 primarily (PORTRAIT) */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+    button {
+        font-size: 5vw;
+        color: white;
+        background-color: rgba(255,255,255,0.2);
+        border: solid 1pt black;
+        width: 25%;
+    }
+
+    article {
+        width: 60%;
+    }
+
+    h1 {
+        font-size:4em;
+    }
+
+    h2{
+        font-size:2.8em;
+    }
+
+    p{
+        font-size:1.5em;
+    }
+
+}
+
+
+/* Media Query NUMBER 2 for Iphone's, Iphone 6 primarily (LANDSCAPE) */
+/* Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+
+    article{
+        width: 50%;
+    }
+
+    button{
+        font-size:7vw;
+    }
+
+    h1{
+        font-size:1.3em;
+    }
+    h2{
+        font-size:.8em;
+    }
+    p{
+        font-size: .5em;
+    }
+
+}
+
+
+
+
+
